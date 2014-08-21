@@ -1,0 +1,8 @@
+@import "app";
+
+main {
+  @include grid-row;
+  section {
+    margin: 1rem 0;
+  }
+}

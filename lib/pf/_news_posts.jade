@@ -1,0 +1,48 @@
+mixin _news_post_base(type)
+  article.news-post(class=type)
+    if block
+      block
+
+mixin _news_post_header
+  header
+    h1
+      a(href="#") Title of the News Post
+    .byline
+      address by Author Name
+
+mixin _news_post_excerpt
+  .content
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    p.more
+      a(href="#") Read More
+
+mixin _news_post_content
+  .content
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+mixin _news_post_image
+  .shot
+    a(href="#")
+      img(src="http://placehold.it/350&text=News+Article+Image" alt="Replace Me")
+
+mixin news_post_snippet
+  +_news_post_base('snippet')
+    +_news_post_header
+    +_news_post_excerpt
+
+mixin news_post_snippet_with_image
+  +_news_post_base('snippet')
+    +_news_post_image
+    +_news_post_header
+    +_news_post_excerpt
+
+mixin news_post
+  +_news_post_base('full')
+    +_news_post_header
+    +_news_post_content
+
+mixin news_post_with_image
+  +_news_post_base('full')
+    +_news_post_image
+    +_news_post_header
+    +_news_post_content
