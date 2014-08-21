@@ -146,6 +146,74 @@ select {
   width: 100%;
 }
 
+/* line 149, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination {
+  display: block;
+  min-height: 1.5rem;
+  margin-left: -0.3125rem;
+}
+/* line 104, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li {
+  height: 1.5rem;
+  color: #222222;
+  font-size: 0.875rem;
+  margin-left: 0.3125rem;
+}
+/* line 110, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li a, ul.pagination li button {
+  display: block;
+  padding: 0.0625rem 0.625rem 0.0625rem;
+  color: #999999;
+  background: none;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: inherit;
+  transition: background-color 300ms ease-out;
+}
+/* line 122, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li:hover a,
+ul.pagination li a:focus, ul.pagination li:hover button,
+ul.pagination li button:focus {
+  background: #e6e6e6;
+}
+/* line 51, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li.unavailable a, ul.pagination li.unavailable button {
+  cursor: default;
+  color: #999999;
+}
+/* line 55, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.pagination li.unavailable:hover button, ul.pagination li.unavailable button:focus {
+  background: transparent;
+}
+/* line 68, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li.current a, ul.pagination li.current button {
+  background: #008cba;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+/* line 74, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
+  background: #008cba;
+}
+/* line 136, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+ul.pagination li {
+  float: left;
+  display: block;
+}
+
+/* Pagination centred wrapper */
+/* line 154, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.pagination-centered {
+  text-align: center;
+}
+/* line 136, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
+.pagination-centered ul.pagination li {
+  float: none;
+  display: inline-block;
+}
+
 /* line 155, ../bower_components/foundation/scss/foundation/components/_type.scss */
 .text-left {
   text-align: left !important;
@@ -840,11 +908,11 @@ blockquote p {
     display: inherit !important;
   }
 }
-/* line 1, ../scss/pf/_news_posts.scss */
+/* line 1, ../scss/protoframes/components/_news_posts.scss */
 .news-post {
   clear: both;
 }
-/* line 3, ../scss/pf/_news_posts.scss */
+/* line 3, ../scss/protoframes/components/_news_posts.scss */
 .news-post.snippet {
   width: 100%;
   margin-left: auto;
@@ -855,21 +923,21 @@ blockquote p {
   border-bottom: solid 1px #ddd;
   padding: 1rem 0;
 }
-/* line 3, ../scss/pf/__base.scss */
+/* line 3, ../scss/protoframes/_base.scss */
 .news-post.snippet:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 7, ../scss/pf/_news_posts.scss */
+/* line 7, ../scss/protoframes/components/_news_posts.scss */
 .news-post.snippet:last-child {
   border-bottom: 0;
 }
-/* line 10, ../scss/pf/_news_posts.scss */
+/* line 10, ../scss/protoframes/components/_news_posts.scss */
 .news-post.snippet *:last-child {
   margin-bottom: 0;
 }
-/* line 13, ../scss/pf/_news_posts.scss */
+/* line 13, ../scss/protoframes/components/_news_posts.scss */
 .news-post.snippet .shot {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -880,12 +948,12 @@ blockquote p {
   max-height: 300px;
   overflow: hidden;
 }
-/* line 20, ../scss/pf/_news_posts.scss */
+/* line 20, ../scss/protoframes/components/_news_posts.scss */
 .news-post.snippet h1 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 24, ../scss/pf/_news_posts.scss */
+/* line 24, ../scss/protoframes/components/_news_posts.scss */
 .news-post.snippet header {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -893,34 +961,34 @@ blockquote p {
   float: left;
   margin-bottom: 1rem;
 }
-/* line 28, ../scss/pf/_news_posts.scss */
+/* line 28, ../scss/protoframes/components/_news_posts.scss */
 .news-post.snippet .content {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left;
 }
-/* line 30, ../scss/pf/_news_posts.scss */
+/* line 30, ../scss/protoframes/components/_news_posts.scss */
 .news-post.snippet .content *:last-child {
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 500px) {
-  /* line 41, ../scss/pf/_news_posts.scss */
+  /* line 41, ../scss/protoframes/components/_news_posts.scss */
   .news-post.snippet .shot {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 33.33333%;
     float: left;
   }
-  /* line 43, ../scss/pf/_news_posts.scss */
+  /* line 43, ../scss/protoframes/components/_news_posts.scss */
   .news-post.snippet .shot ~ header {
     padding-left: 0;
     padding-right: 0;
     width: 66.66667%;
     float: left;
   }
-  /* line 47, ../scss/pf/_news_posts.scss */
+  /* line 47, ../scss/protoframes/components/_news_posts.scss */
   .news-post.snippet .content {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -931,24 +999,29 @@ blockquote p {
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 3, ../scss/pf/__base.scss */
+  /* line 3, ../scss/protoframes/_base.scss */
   .news-post.snippet:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 60, ../scss/pf/_news_posts.scss */
+  /* line 60, ../scss/protoframes/components/_news_posts.scss */
   .news-post.snippet header {
     float: none;
     width: auto;
   }
-  /* line 64, ../scss/pf/_news_posts.scss */
+  /* line 64, ../scss/protoframes/components/_news_posts.scss */
   .news-post.snippet .content {
     clear: none;
     width: auto;
     float: none;
   }
 }
+/* line 1, ../scss/protoframes/components/_pagination.scss */
+.pagination {
+  margin: 1rem 0;
+}
+
 /* line 3, ../scss/demo.scss */
 main {
   width: 100%;
@@ -958,7 +1031,7 @@ main {
   margin-bottom: 0;
   max-width: 62.5rem;
 }
-/* line 3, ../scss/pf/__base.scss */
+/* line 3, ../scss/protoframes/_base.scss */
 main:after {
   content: "";
   display: table;

@@ -1,5 +1,11 @@
+mixin news_post_snippets(num)
+  section.news-posts
+    - for (var i = 0; i < (num || 10); ++i) {
+      +news_post_snippet
+    - }
+
 mixin _news_post_base(type)
-  article.news-post(class=type)
+  article.news-post(class=type || '')
     if block
       block
 

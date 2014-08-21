@@ -1,23 +1,6 @@
-include ../lib/pf/_news_posts
+include ../lib/protoframes/protoframes
 
-doctype html
-html(class="no-js" lang="en")
-  head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Protoframes Demo
-    link(rel="stylesheet" href="stylesheets/demo.css")
-    script(src="bower_components/modernizr/modernizr.js")
-
-  body
-
-    main
-
-      section.news-posts
-        +news_post_snippet_with_image
-        +news_post_snippet
-        +news_post_snippet
-
-    script src="bower_components/jquery/dist/jquery.min.js"
-    script src="bower_components/foundation/js/foundation.min.js"
-    script src="js/app.js"
++template
+  +pagination
+  +news_post_snippets(5)
+  +pagination

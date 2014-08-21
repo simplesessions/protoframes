@@ -9,9 +9,43 @@
   </head>
   <body>
     <main>
+      <ul class="pagination">
+        <li class="arrow unavailable"><a href="">&laquo;</a></li>
+        <li class="current"><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li class="unavailable"><a href="">&hellip;</a></li>
+        <li><a href="">12</a></li>
+        <li><a href="">13</a></li>
+        <li class="arrow"><a href="">&raquo;</a></li>
+      </ul>
       <section class="news-posts">
         <article class="news-post snippet">
-          <div class="shot"><a href="#"><img src="http://placehold.it/350&amp;text=News+Article+Image" alt="Replace Me"/></a></div>
+          <header>
+            <h1><a href="#">Title of the News Post</a></h1>
+            <div class="byline">
+              <address>by Author Name</address>
+            </div>
+          </header>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="more"><a href="#">Read More</a></p>
+          </div>
+        </article>
+        <article class="news-post snippet">
+          <header>
+            <h1><a href="#">Title of the News Post</a></h1>
+            <div class="byline">
+              <address>by Author Name</address>
+            </div>
+          </header>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="more"><a href="#">Read More</a></p>
+          </div>
+        </article>
+        <article class="news-post snippet">
           <header>
             <h1><a href="#">Title of the News Post</a></h1>
             <div class="byline">
@@ -48,9 +82,20 @@
           </div>
         </article>
       </section>
+      <ul class="pagination">
+        <li class="arrow unavailable"><a href="">&laquo;</a></li>
+        <li class="current"><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li class="unavailable"><a href="">&hellip;</a></li>
+        <li><a href="">12</a></li>
+        <li><a href="">13</a></li>
+        <li class="arrow"><a href="">&raquo;</a></li>
+      </ul>
     </main>
-    <script>src="bower_components/jquery/dist/jquery.min.js"</script>
-    <script>src="bower_components/foundation/js/foundation.min.js"</script>
-    <script>src="js/app.js"</script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

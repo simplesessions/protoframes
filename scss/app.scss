@@ -21,7 +21,7 @@
 // @import "foundation/components/labels";
 // @import "foundation/components/magellan";
 // @import "foundation/components/orbit";
-// @import "foundation/components/pagination";
+@import "foundation/components/pagination";
 // @import "foundation/components/panels";
 // @import "foundation/components/pricing-tables";
 // @import "foundation/components/progress-bars";
@@ -41,8 +41,7 @@
 
 
 // Add the Protoframes Libraries
-@import "pf/_base";
-@import "pf/news_posts";
+@import "protoframes/protoframes";
 
 // Add the additional stylesheets here
 @import "compass/css3";
