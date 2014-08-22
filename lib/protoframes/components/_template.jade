@@ -6,14 +6,19 @@ mixin template
       meta(name="viewport" content="width=device-width, initial-scale=1.0")
       title Protoframes Demo
       link(rel="stylesheet" href="stylesheets/demo.css")
-      script(src="bower_components/modernizr/modernizr.js")
+      script(data-main="js/main" src="js/require.js")
+      script.
+        require.config({
+          baseUrl: "js",
+          paths: {
+            "modernizr": "/bower_components/modernizr/modernizr",
+            "jquery": "/bower_components/jquery/dist/jquery.min",
+            "foundation": "/bower_components/foundation/js/foundation.min"
+          }
+        });
 
     body
 
       main
         if block
           block
-
-      script(src="bower_components/jquery/dist/jquery.min.js")
-      script(src="bower_components/foundation/js/foundation.min.js")
-      script(src="js/app.js")

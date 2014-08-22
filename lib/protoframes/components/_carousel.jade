@@ -1,0 +1,18 @@
+mixin carousel(num, imageUrl)
+  section.carousel-container
+    .carousel
+      - for (var i = 0; i < (num || 5); ++i) {
+        +_carousel_item(imageUrl)
+      - }
+    script.
+      require( ["jquery",
+                "bower_components/slick-carousel/slick/slick.min.js"],
+                function(jquery, slick) {
+        $('.carousel').slick({
+          dots: true
+        });
+      });
+
+mixin _carousel_item(imageUrl)
+  .carousel-item
+    img(src=imageUrl || "http://placehold.it/1000x430&text=carousel+item")
